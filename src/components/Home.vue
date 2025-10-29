@@ -265,9 +265,9 @@ onUnmounted(() => {
       border-radius: 0 0 999px 999px;
       padding-top: calc(var(--s) / 5);
       mask:
-          linear-gradient(#000 0 0) no-repeat 50%
-          calc(10px - (1 / var(--f) - 1) * var(--s) / 2 - var(--b)) /
-          calc(100% / var(--f) - 3 * var(--b)) 50%,
+          linear-gradient(#000 0 0) no-repeat
+          50% calc((var(--f) - 1.35) * 250%) /
+                100% 60%,
           radial-gradient(circle closest-side, #000 99%, transparent)
           content-box no-repeat center / calc(100% / var(--f));
     }
